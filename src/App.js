@@ -24,7 +24,7 @@ function App() {
 				<Route path="/demo-react/checkout" element={<Checkout/>} />
 
 				<Route path="/demo-react/product" element={<ProductDetail/>}>
-					<Route path=":id" element={<ProductDetail/>} />
+					<Route path="/demo-react/:id" element={<ProductDetail/>} />
 				</Route>
 
 				<Route path="*" element={<p>找不到頁面</p>}/>
