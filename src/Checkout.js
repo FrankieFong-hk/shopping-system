@@ -36,7 +36,7 @@ export default function Checkout() {
                                     cartItems.map(product=>(
                                         <tr key={product.id}>
                                             <td>
-                                                <Link to={'/product/'+product.id}>
+                                                <Link to={'/demo-react/product/'+product.id}>
                                                 <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name}/>
                                                 </Link>
                                             </td>
