@@ -25,7 +25,7 @@ export default function ProductList() {
                         <React.Fragment key={product.id}>
 
                             <div className="containerItem">
-                                <Link to={'/demo-react/product/'+product.id}>
+                                <Link to={'/shopping-system/product/'+product.id}>
                                     <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name} />
                                 </Link>
 

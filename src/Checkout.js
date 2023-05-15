@@ -22,7 +22,7 @@ export default function Checkout() {
                 cartEmpty && 
                 <div>
                     <div className="nothingInCart">購物車現在沒有商品<br/><br/>
-                    <Link to="/demo-react/">去產品頁看看吧</Link></div> :
+                    <Link to="/shopping-system/">去產品頁看看吧</Link></div> :
                 </div>
             }
 
@@ -36,7 +36,7 @@ export default function Checkout() {
                                     cartItems.map(product=>(
                                         <tr key={product.id}>
                                             <td>
-                                                <Link to={'/demo-react/product/'+product.id}>
+                                                <Link to={'/shopping-system/product/'+product.id}>
                                                 <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name}/>
                                                 </Link>
                                             </td>

@@ -15,15 +15,15 @@ function App() {
 		<CartContext.Provider value={{cartItems,setCartItems}}>
 
 			<nav>
-				<Link to="/demo-react/">首頁</Link> 
-				<Link to="/demo-react/checkout">購物車</Link>
+				<Link to="/shopping-system/">首頁</Link> 
+				<Link to="/shopping-system/checkout">購物車</Link>
 			</nav>
 
 			<Routes>
-				<Route path="/demo-react/" element={<ProductList/>} />
-				<Route path="/demo-react/checkout" element={<Checkout/>} />
+				<Route path="/shopping-system/" element={<ProductList/>} />
+				<Route path="/shopping-system/checkout" element={<Checkout/>} />
 
-				<Route path="/demo-react/product" element={<ProductDetail/>}>
+				<Route path="/shopping-system/product" element={<ProductDetail/>}>
 					<Route path=":id" element={<ProductDetail/>} />
 				</Route>
 
