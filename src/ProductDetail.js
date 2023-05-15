@@ -45,7 +45,7 @@ export default function ProductDetail() {
                 </div>
             }
         
-            <Link to="/demo-react/" >
+            <Link to="/" >
                 <div className="backToGoodsListBtn">↩️ 返回商品列表</div>
             </Link>
         </div>
